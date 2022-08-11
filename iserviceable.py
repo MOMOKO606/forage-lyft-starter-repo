@@ -1,10 +1,7 @@
-from abc import ABCMeta, abstractmethod
+from abc import ABC, abstractmethod
 
 
-class IServiceable(metaclass = ABCMeta):
-    def __init__(self) -> None:
-        pass
-
+class IServiceable(ABC):
     @abstractmethod
     def needs_service(self) -> bool:
         pass

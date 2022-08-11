@@ -1,9 +1,7 @@
 from abc import ABC,abstractmethod
+import datetime
 
 class Battery(ABC):
-    def __init__(self) -> None:
-        pass
-
     @abstractmethod
     def needs_service(self) -> bool:
         pass
